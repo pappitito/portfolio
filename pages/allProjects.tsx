@@ -18,7 +18,7 @@ interface ProjectLineProps{
 const ProjectLine = ({id, title, subtitle, codeLink, liveLink}: ProjectLineProps)=>{
     const [expand, setExpand] = React.useState(false)
             return(
-                <div className={`w-[100%] hover:bg-[#212121] ${expand? 'bg-[#212121]': ''} flex flex-col gap-3 mds:gap-5 p-4 mds:pl-6 mds:pr-6  justify-between  `}>
+                <div className={`w-[100%] mds:hover:bg-[#212121] ${expand? 'bg-[#212121]': ''} flex flex-col gap-3 mds:gap-5 p-4 mds:pl-6 mds:pr-6  justify-between  `}>
                     <div onClick={()=> setExpand(prev => !prev)} className=' cursor-pointer flex flex-row justify-between items-center'>
                         <div className='text-[1.2rem] font-medium'>{title}</div>
                         <div  className='w-[2.4rem] cursor-pointer justify-end border-[0.16rem] border-[#65C23A]  rounded-[50%]'>
