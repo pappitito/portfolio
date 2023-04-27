@@ -50,7 +50,7 @@ const [scrollPosition, setScrollPosition] = React.useState(0);
                     <div  className='flex flex-col text-white items-center p-4'>
                         <div className='text-[1.6rem] text-center mt-[-0.5rem] text-white font-semibold'>{project.title}</div>
                         <div className=' w-[80%] mds:w-[50%] max-w-[33rem] mt-[1rem] border-white border-[0.2rem]'>
-                            <Image src={project.img} alt='screenshot' width={600} height={500} priority  />
+                            <Image src={project.img} alt='screenshot' width={600} height={400} priority  />
                         </div>
                         <p className='mt-[2rem] w-[90%] text-justify mds:w-[75%] max-w-[44rem]'>{project.details}</p>
                         <div className='flex flex-row mb-[2rem]'>
