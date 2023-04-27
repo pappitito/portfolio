@@ -14,9 +14,9 @@ const FirstPage = ({myRef}: Props) => {
     AOS.init({
       duration: 800,
       easing: 'ease-in-out',
-      offset: 150,
+      offset: 200,
       delay: 100,
-      once: true
+      once: false
     });
   }, []);
   
