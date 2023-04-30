@@ -38,21 +38,23 @@ const [scrollPosition, setScrollPosition] = React.useState(0);
         
       
     </Link>
-        <div onClick={() =>  window.history.back()}><div  className='flex flex-row gap-1 text-white text-[1.2rem] ml-3  items-center justify-start mt-[1.5rem]'>
+        <div className='flex justify-start'>
+        <div onClick={() =>  window.history.back()}><div  className='flex flex-row gap-1 text-white text-[1.2rem] ml-3  items-center  mt-[1.5rem]'>
                 <div  className='p-1 mr-1 hover:bg-[#65C23A] cursor-pointer rotate-180 rounded-[50%] border-[0.2rem] border-[#65C23A]'>
                     <Image  src='/images/arrow.png' alt='arrow' width={26} height={26} priority />
                 </div>
                 <div className='hover:text-[#65C23A] text-[0.95rem] font-medium cursor-pointer'>back</div>
             </div></div>
+        </div>
         {projects? projects.map((project)=>{
             if( postId === project.id){
                 return(
-                    <div  className='flex flex-col text-white items-center p-4'>
+                    <div  className='flex flex-col text-gray-50 items-center p-4'>
                         <div className='text-[1.6rem] text-center mt-[-0.5rem] text-white font-semibold'>{project.title}</div>
-                        <div className=' w-[80%] mds:w-[50%] max-w-[33rem] mt-[1rem] border-white border-[0.2rem]'>
+                        <div className=' w-[80%] mds:w-[50%] max-w-[33rem] mt-[1rem] border-white rounded-[0.2rem] border-[0.2rem]'>
                             <Image src={project.img} alt='screenshot' width={600} height={400} priority  />
                         </div>
-                        <p className='mt-[2rem] w-[90%] text-justify mds:w-[75%] max-w-[44rem]'>{project.details}</p>
+                        <p className='mt-[2rem] w-[90%] leading-8 text-justify mds:w-[75%] max-w-[44rem]'>{project.details}</p>
                         <div className='flex flex-row mb-[2rem]'>
                             <div className='flex flex-wrap gap-[1rem] w-[100%] mt-[2rem] justify-center items-center '>
                                <Link className='w-[7.2rem]' href={project.livelink? project.livelink: project.codeLink? project.codeLink: ''} target='_blank'><Button text={project.livelink? 'VIEW LIVE': 'VIEW CODE'} /></Link>

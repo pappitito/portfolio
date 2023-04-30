@@ -10,16 +10,17 @@ import { projects } from '../components/projects'
 interface ProjectLineProps{
     id: number,
     title: string,
+    img: string,
     codeLink?: string,
     subtitle?: string,
     liveLink?: string
 }
 
-const ProjectLine = ({id, title, subtitle, codeLink, liveLink}: ProjectLineProps)=>{
+const ProjectLine = ({id, title, img, subtitle, codeLink, liveLink}: ProjectLineProps)=>{
     const [expand, setExpand] = React.useState(false)
             return(
-                <div className={`w-[100%] mds:hover:bg-[#212121] ${expand? 'bg-[#212121]': ''} flex flex-col gap-3 mds:gap-5 p-4 mds:pl-6 mds:pr-6  justify-between  `}>
-                    <div onClick={()=> setExpand(prev => !prev)} className=' cursor-pointer flex flex-row justify-between items-center'>
+                <div onClick={()=> setExpand(prev => !prev)}  className={`w-[100%] mds:hover:bg-[#212121] ${expand? 'bg-[#212121]': ''} flex cursor-pointer flex-col gap-3 mds:gap-5 p-4 mds:pl-6 mds:pr-6  justify-between  `}>
+                    <div  className=' cursor-pointer flex flex-row justify-between items-center'>
                         <div className='text-[1.2rem] font-medium'>{title}</div>
                         <div  className='w-[2.4rem] cursor-pointer justify-end border-[0.16rem] border-[#65C23A]  rounded-[50%]'>
                                 <Image src={`/images/${expand? 'arrowUp':'arrowDown'}.png`} alt='arrow' width={128} height={128} priority/>
@@ -32,12 +33,20 @@ const ProjectLine = ({id, title, subtitle, codeLink, liveLink}: ProjectLineProps
                                     animate={{ opacity: 1, y: 0}}
                                     exit={{ opacity: 0, y: '-5vh' }}
                                     transition={{ duration: 0.8 }}
-                                    className='flex flex-col gap-5 mt-[0.6rem] mds:mt-[-0.2rem]'
-                                    >
-                                        <div className='text-[#65C32A]'>{subtitle}</div>
-                                        <div className='flex flex-row justify-start items-center gap-3'>
-                                        <Link className='' href={liveLink? liveLink: codeLink? codeLink: ''} target="_blank"><Button text={liveLink? 'LIVE': 'CODE'} /></Link>
-                                        <Link className='' href={`/details/${id}`}><Button text={'DETAILS'} isOutline /></Link>
+                                    className='flex  flex-col-reverse mdm:flex-row items-center justify-center mdm:justify-between mt-[0.6rem] mds:mt-[-0.2rem]'
+                                    >   
+                                        
+                                        <div className='flex flex-col mb-3 items-center  mdm:items-start gap-5 '>
+                                             <div className='text-[#65C32A] text-center'>{subtitle}</div>
+                                            <div className='flex flex-row justify-start items-center gap-3'>
+                                            <Link className='w-[7rem]' href={liveLink? liveLink: codeLink? codeLink: ''} target="_blank"><Button text={liveLink? 'LIVE': 'CODE'} /></Link>
+                                            <Link className='w-[7rem]' href={`/details/${id}`}><Button text={'DETAILS'} isOutline /></Link>
+                                            </div>
+                                        </div>
+                                        <div className='flex justify-center mdm:justify-end'>
+                                            <div className='border-white border-[0.12rem] rounded-[0.15rem] max-w-[26rem] mdm:mt-[-0.6rem]  w-[40%] mb-[1.7rem] mdm:mb-[1rem] min-w-[15rem] mdm:w-[40%] mdm:mr-[3rem]'>
+                                                <Image src={img} width={300} height={0} alt='preview' priority />
+                                            </div>
                                         </div>
                                  </motion.div>: ''}
                     
@@ -69,8 +78,8 @@ const AllProjects = () => {
             </Link>
 
         </div>
-        <div className='flex flex-col mt-[0.5rem] p-4'>
-          <Link href='/'><div  className='flex flex-row gap-1 text-white text-[1.2rem] ml-[0rem]  items-center justify-start mt-[-0.5rem] mds:mt-[0.4rem]'>
+        <div className='flex justify-start  mt-[0.5rem] p-4'>
+          <Link href='/'><div  className='flex flex-row gap-1 text-white text-[1.2rem] ml-[0rem]  items-center  mt-[-0.5rem] mds:mt-[0.4rem]'>
                 <div  className='p-1 mr-1 hover:bg-[#65C23A] cursor-pointer rotate-180 rounded-[50%] border-[0.2rem] border-[#65C23A]'>
                     <Image  src='/images/arrow.png' alt='arrow' width={26} height={26} priority />
                 </div>
@@ -83,7 +92,7 @@ const AllProjects = () => {
             {projects? 
                 projects.map((project)=>{
                     return(
-                        <ProjectLine title={project.title} id={project.id} liveLink={project.livelink} codeLink={project.codeLink} subtitle={project.subtitle}  />
+                        <ProjectLine title={project.title} img={project.img} id={project.id} liveLink={project.livelink} codeLink={project.codeLink} subtitle={project.subtitle}  />
                     )
                 })
             :''}

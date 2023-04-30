@@ -20,7 +20,7 @@ interface ProjectProp{
 const ProjectCard = ({id, img, title, subtitle, liveLink}: ProjectProp) => {
     return(
         <div data-aos="fade-right" data-aos-duration="700"  className='bg-[#212121] flex flex-col p-8 gap-6 items-center justify-center w-[19rem] h-[27rem]'>
-            <div className='border-[0.2rem] border-white'>
+            <div className='border-[0.2rem] rounded-[0.15rem] border-white'>
                 <Image src={img} alt='screenshot' width={260} height={160} priority />
             </div>
             <h2 className='text-[1.2rem] font-semibold'>{title}</h2>
@@ -58,12 +58,14 @@ const Portfolio = ({myRef}: Props) => {
                 })}
             
             </div>
-            <Link href='/allProjects' className='flex flex-row gap-5 text-[1.2rem]  items-center justify-end mt-[3rem]'>
+            <div className='flex justify-end'>
+            <Link href='/allProjects' className='flex flex-row  gap-5 text-[1.2rem]  items-center  mt-[3rem]'>
                 <div className='hover:text-[#65C23A] cursor-pointer'>see all projects</div>
                 <div className='p-3 mr-4 hover:bg-[#65C23A] rounded-[50%] border-[0.2rem] border-white'>
                     <Image  src='/images/arrow.png' alt='arrow' width={35} height={35} priority />
                 </div>
             </Link>
+            </div>
             
         </div>
 

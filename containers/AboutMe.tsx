@@ -19,10 +19,10 @@ const AboutMe = ({myRef}: Props) => {
         <div data-aos="zoom-out" data-aos-duration="800" className=' w-[100%] flex flex-col border-t-[0.2rem] border-t-[#65C23A]'>
             <div>
                 <div className='flex flex-row gap-[2rem] w-[100%] mt-[5rem] justify-end'>
-                    <div className='hidden mdm:flex-col mdm:flex  h-[100%] items-center'>
-                        <Image className='mt-[8rem]' src='/images/profiler.png' alt='pin' width={140} height={140}  />
+                    <div className='hidden mdm:flex-col mdm:flex  h-[100%] items-center '>
+                        <Image className='mt-[8rem]' src='/images/profiler.png' alt='pin' width={260} height={140}  />
                     </div>
-                    <div className='flex flex-col w-[100%] mdm:w-[50%]'>
+                    <div className='flex flex-col w-[100%] mdm:ml-[5rem] mdm:w-[50%]'>
                          <h2 className='text-center mdm:text-[2.8rem] text-[2rem] font-semibold tracking-tighter'>About me</h2>
                           <div className='mt-[2rem] text-justify tracking-tight text-[1rem] mds:text-[1.15rem]  leading-[2rem]'>
                           As a goal-oriented, detail-oriented, and creative thinker, I understand the importance of setting clear objectives
@@ -45,8 +45,8 @@ const AboutMe = ({myRef}: Props) => {
                                  <div data-aos="flip-left" className='text-[0.8rem] text-center text-[#65C23A]'>MONTHS OF EXPERIENCE</div>
                              </div>
                              <div className='flex flex-col items-center'>
-                                 <div data-aos="flip-down" className='text-[3rem] font-bold'>15+</div>
-                                 <div data-aos="flip-left" className='text-[0.8rem] text-center text-[#65C23A]'>PROJECTS COMPLETED</div>
+                                 <div data-aos="flip-down" className='text-[3rem] font-bold'>10+</div>
+                                 <div data-aos="flip-left" className='text-[0.8rem] text-center text-[#65C23A]'>PROJECTS EXECUTED</div>
                              </div>
 
                          </div>
@@ -58,8 +58,8 @@ const AboutMe = ({myRef}: Props) => {
                     </div>
                     <div data-aos="fade-right" className='mdm:text-[2rem] text-[1.3rem] font-semibold'>Trustworthy, Creative and Dedicated to 
                         <span data-aos="fade-left" className='text-[#65C23A]'> delivering on time</span></div>
-                        <div className='mdm:w-[10rem] w-[10rem] mt-8'>
-                        <Button text={'DOWNLOAD CV'} isOutline />
+                        <div className='mdm:w-[8rem] w-[8rem] mt-8'>
+                        <Button text={'VIEW CV'} isOutline onClick={() => window.open("/files/TitoCV.pdf", "_blank")}/>
                         </div>
 
                 </div>

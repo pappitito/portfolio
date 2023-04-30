@@ -20,10 +20,16 @@ const BulletPoint = ({point}: Point)=>{
 }
 
 const achievments = [
-    'developed various responsive landing pages to visualize what our products offer ',
-    `Built sustainable bla bal bal for engaging in non domestic sophisticated decentralization
-     also demoralized the sensitized malware `,
-     `Built sustainable reiterating the community for engaging in non domestic `
+    'Gained valuable skills in web development and real-world project experience. ',
+    `Assisted in developing the front-end interface using NextJS, Tailwind, and Typescript. `,
+     `Worked using front-end design libraries such as Ant design, and framer motion. `,
+     `Implemented data visualization for the dashboard of one of the products, enabling users to have broader
+     insights into their transactions`,
+     `Created landing pages describing the features of our products.`,
+     `Wrote back-end code using Node.js and Express.js.`,
+     `Implemented RESTful API using Node.js and Express.js with MongoDB as the database.`,
+     `Created customized QR code generator API for payment of transactions using QR.`,
+     `Assisted in the deployment of API on AWS.`
 ]
 
 const Resume = ({myRef}: Props) => {
@@ -80,8 +86,8 @@ const Resume = ({myRef}: Props) => {
             </div>
         </div>
         <div className='flex justify-end mr-[1.5rem] mds:mr-[2.5rem] lgm:mr-[3.2rem]'>
-            <div className='mdm:w-[10rem] w-[10rem] mt-8'>
-               <Button text={'DOWNLOAD CV'} isOutline />
+            <div className='mdm:w-[8rem] w-[8rem] mt-8'>
+               <Button text={'VIEW CV'} isOutline onClick={() => window.open("/files/TitoCV.pdf", "_blank")} />
             </div>
         </div>
         <div className='mds:ml-[7rem] ml-[3.6rem] mt-[2rem] mdm:mt-[3.7rem]'>

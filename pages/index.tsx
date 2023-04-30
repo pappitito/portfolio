@@ -78,11 +78,11 @@ const handleClick = (ref:any) => {
     
   },
   {
-    name: 'DOWNLOAD CV',
+    name: 'VIEW CV',
     
     isButton: true,
     isOutlineButton: true,
-    
+    onClick: () => window.open("/files/TitoCV.pdf", "_blank")
    
 
   },
