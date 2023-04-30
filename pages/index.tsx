@@ -103,6 +103,7 @@ const handleClick = (ref:any) => {
 
 
       </Head>
+      <div className='flex flex-col overflow-hidden'>
       <Header links={linkOptions} />
       <FirstPage myRef={firstPageRef}    />
       <AboutMe myRef={aboutPageRef} />
@@ -111,6 +112,7 @@ const handleClick = (ref:any) => {
       <Resume myRef={ResumePageRef} />
       <Contact myRef={contactPageRef} />
       <Myfooter />
+      </div>
       
       
       

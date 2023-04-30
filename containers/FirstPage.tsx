@@ -14,14 +14,15 @@ const FirstPage = ({myRef}: Props) => {
     AOS.init({
       duration: 800,
       easing: 'ease-in-out',
-      offset: 200,
+      offset: 100,
       delay: 100,
-      once: false
+      once: false,
+    
     });
   }, []);
   
   return (
-    <div  ref={myRef} className='flex relative mt-[1rem] mb-[38rem]  mds:mb-[50rem] lgm:mb-[46rem]  flex-col  gap-0 w-[100%] h-[00%] p-4   '>
+    <div  ref={myRef} className='flex relative mt-[1rem] mb-[38rem]   mds:mb-[50rem] lgm:mb-[46rem]  flex-col  gap-0 w-[100%] h-[00%] p-4   '>
 
        <div className='flex mt-[-4rem]  flex-row items-baseline'>
             <div data-aos="fade-right" data-aos-duration="1200" className='z-[2] absolute top-[400%] mdm:top-[200%] pt-[10rem] ml-[-0.6rem] mdm:pl-[3rem]' >
