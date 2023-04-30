@@ -90,6 +90,7 @@ const Contact = ({myRef}: Props) => {
                 }
                 else{
                     showToastMessage('unable to send', 'error')
+                    setLoading(false)
                 }
             } catch (error) {
                 setLoading(false)
