@@ -8,6 +8,7 @@
   "dependencies": {
     "@types/aos": "^3.0.4",
     "aos": "^2.3.4",
+    "dotenv": "^16.0.3",
     "framer-motion": "^10.12.4",
     "next": "latest",
     "nodemailer": "^6.9.1",
