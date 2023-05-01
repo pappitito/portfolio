@@ -110,19 +110,19 @@ const Contact = ({myRef}: Props) => {
         </div>
         <div className='flex flex-col items-center mdm:flex-row mt-[2rem] gap-[2rem] p-4 mdm:items-start justify-center'>
             <div className='mdm:flex grid grid-cols-2 mdm:flex-col gap-4'>
-                <div data-aos="flip-right" className='pl-[1rem] pr-[1rem] mds:pl-[2rem] max-w-[17rem] mds:pr-[2rem] h-[13rem]  flex flex-col gap-4 items-center justify-center bg-[#212121]'>
+                <div data-aos="flip-right" className='pl-[1rem] pr-[1rem] mds:pl-[2rem] max-w-[17rem] mds:pr-[2rem] h-[9.5rem]  flex flex-col gap-4 items-center justify-center bg-[#212121]'>
                     <div><Image src='/images/location.png' alt='address' width={40} height={40}/></div>
-                    <div className='text-center text-[0.96rem] '>6b serene court, Adebayo doherty, Lekki phase 1</div>
+                    <div className='text-center text-[0.96rem] '>Remote</div>
                 </div>
-                <div data-aos="flip-right" className='pl-[1rem] pr-[1rem] mds:pl-[2rem] break-words max-w-[17rem] mds:pr-[2rem] h-[13rem]  flex flex-col gap-4 items-center justify-center bg-[#212121]'>
+                <div data-aos="flip-right" className='pl-[1rem] pr-[1rem] mds:pl-[2rem] break-words max-w-[17rem] mds:pr-[2rem] h-[9.5rem]  flex flex-col gap-4 items-center justify-center bg-[#212121]'>
                     <div><Image src='/images/email.png' alt='address' width={40} height={40}/></div>
                     <div className='text-center text-[0.96rem] max-w-[7rem]  mds:max-w-[100%]  '>titonwudinjo@gmail.com</div>
                 </div>
-                <div data-aos="flip-right" className='pl-[1rem] pr-[1rem] mds:pl-[2rem] max-w-[17rem] mds:pr-[2rem] h-[13rem]  flex flex-col gap-4 items-center justify-center bg-[#212121]'>
+                <div data-aos="flip-right" className='pl-[1rem] pr-[1rem] mds:pl-[2rem] max-w-[17rem] mds:pr-[2rem] h-[9.5rem]  flex flex-col gap-4 items-center justify-center bg-[#212121]'>
                     <div><Image src='/images/telephone.png' alt='address' width={40} height={40}/></div>
                     <div className='text-center text-[0.96rem]  '>+234 814 074 8658</div>
                 </div>
-                <div data-aos="flip-right" className='pl-[1rem] pr-[1rem] mds:pl-[2rem] max-w-[17rem] mds:pr-[2rem] h-[13rem]  flex flex-col gap-4 items-center justify-center bg-[#212121]'>
+                <div data-aos="flip-right" className='pl-[1rem] pr-[1rem] mds:pl-[2rem] max-w-[17rem] mds:pr-[2rem] h-[9.5rem]  flex flex-col gap-4 items-center justify-center bg-[#212121]'>
                     <div><Image src='/images/verified.png' alt='address' width={40} height={40}/></div>
                     <div className='text-center text-[0.96rem] '>Freelance available</div>
                 </div>
@@ -144,7 +144,7 @@ const Contact = ({myRef}: Props) => {
                         }}
                     />
                 </div>
-                <div className='h-[20rem] mdm:h-[38.52rem] w-[100%]  break-words'>
+                <div className='h-[20rem] mdm:h-[24.52rem] w-[100%]  break-words'>
                     <textarea className='text-[1rem] p-[0.8rem] w-[100%] h-[100%] bg-black outline-none focus:outline-none' placeholder='Enter your message'
                         value={message}
                         onChange={(e)=>{

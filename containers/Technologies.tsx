@@ -16,7 +16,7 @@ interface AllCards{
 }
 const Card = ({img,first, second}: CardProp)=>{
     return (
-        <div data-aos="fade-right" data-aos-duration="700"  className='flex flex-col items-center overflow-x-hidden justify-center w-[8rem] mdm:w-[9rem] h-[9rem] mdm:h-[10.5rem] bg-[#212121]'>
+        <div data-aos="fade-right" data-aos-duration="700"  className='flex flex-col items-center overflow-x-hidden justify-center w-[8rem] mdm:w-[9rem] h-[9rem] mdm:h-[10.5rem] '>
             <div className='mt-[-0.4rem]'>
                 <Image src={img} alt='logo' width={60} height={60} priority />
             </div>
@@ -96,7 +96,7 @@ const Technologies = ({myRef}: Props) => {
             )
         }) : ''}</div>
         </div>
-        <div data-aos="flip-up" className='w-[100%] mt-[4rem] pt-[1rem] pb-[1rem] text-[0.85rem] text-black font-semibold mdm:text-[1.3rem] text-center bg-[#65C23A]'>{'MORE LIKE CONTINOUS STACK DEVELOPER'}</div>
+        <div data-aos="flip-up" className='w-[100%] mt-[4rem] pt-[1rem] pb-[1rem] text-[0.85rem] text-black font-semibold mdm:text-[1.3rem] text-center bg-[#65C23A]'>{'MORE LIKE CONTINOUS STACK DEVELOPER  😁'}</div>
     </div>
   )
 }

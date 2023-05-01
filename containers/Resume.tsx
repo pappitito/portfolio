@@ -20,16 +20,16 @@ const BulletPoint = ({point}: Point)=>{
 }
 
 const achievments = [
-    'Gained valuable skills in web development and real-world project experience. ',
-    `Assisted in developing the front-end interface using NextJS, Tailwind, and Typescript. `,
-     `Worked using front-end design libraries such as Ant design, and framer motion. `,
+    'Gain valuable skills in web development and real-world project experience. ',
+    `Assist in developing the front-end interface using NextJS, Tailwind, and Typescript. `,
+     `Work using front-end design libraries such as Ant design, and framer motion. `,
      `Implemented data visualization for the dashboard of one of the products, enabling users to have broader
      insights into their transactions`,
-     `Created landing pages describing the features of our products.`,
+     `Create landing pages describing the features of our products.`,
      `Wrote back-end code using Node.js and Express.js.`,
-     `Implemented RESTful API using Node.js and Express.js with MongoDB as the database.`,
+     `Implement RESTful API using Node.js and Express.js with MongoDB as the database.`,
      `Created customized QR code generator API for payment of transactions using QR.`,
-     `Assisted in the deployment of API on AWS.`
+     `Assist in the deployment of APIs.`
 ]
 
 const Resume = ({myRef}: Props) => {
@@ -87,7 +87,7 @@ const Resume = ({myRef}: Props) => {
         </div>
         <div className='flex justify-end mr-[1.5rem] mds:mr-[2.5rem] lgm:mr-[3.2rem]'>
             <div className='mdm:w-[8rem] w-[8rem] mt-8'>
-               <Button text={'VIEW CV'} isOutline onClick={() => window.open("/files/TitoCV.pdf", "_blank")} />
+               <Button text={'VIEW CV'} isOutline onClick={() => window.open("/files/TitoCV.pdf")} />
             </div>
         </div>
         <div className='mds:ml-[7rem] ml-[3.6rem] mt-[2rem] mdm:mt-[3.7rem]'>

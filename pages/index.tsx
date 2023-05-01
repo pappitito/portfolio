@@ -82,7 +82,7 @@ const handleClick = (ref:any) => {
     
     isButton: true,
     isOutlineButton: true,
-    onClick: () => window.open("/files/TitoCV.pdf", "_blank")
+    onClick: () => window.open("/files/TitoCV.pdf")
    
 
   },
