@@ -34,7 +34,7 @@ const [scrollPosition, setScrollPosition] = React.useState(0);
         </Head>
         <Link className='flex mt-4 ml-4 cursor-pointer ' href='/'>
         
-        <div data-aos="fade-right" className='text-[1.4rem] text-[#65C23A] font-semibold mdm:ml-[1rem] '>DEV<span className='text-white'>SNACK</span></div>
+        <div data-aos="fade-right" className='text-[1.4rem] text-[#65C23A] font-semibold mdm:ml-[1rem] '>DEV<span className='text-white'>SNACKS</span></div>
         
       
     </Link>

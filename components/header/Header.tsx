@@ -19,7 +19,7 @@ const Header = ({links}: Props) => {
     <div className='flex flex-row justify-between z-[100] p-2 pt-6 pl-4 pr-4'>
       <Link className='flex cursor-pointer ' href='/'>
         
-          <div data-aos="fade-right" className='text-[1.4rem] text-[#65C23A] font-semibold mdm:ml-[1rem] '>DEV<span className='text-white'>SNACK</span></div>
+          <div data-aos="fade-right" className='text-[1.4rem] text-[#65C23A] font-semibold mdm:ml-[1rem] '>DEV<span className='text-white'>SNACKS</span></div>
           
         
       </Link>
