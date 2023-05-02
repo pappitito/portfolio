@@ -21,6 +21,7 @@ const BulletPoint = ({point}: Point)=>{
 
 const achievments = [
     'Gain valuable skills in web development and real-world project experience. ',
+    `Working effectively together with teams using GitLab and JIRA.`,
     `Assist in developing the front-end interface using NextJS, Tailwind, and Typescript. `,
      `Work using front-end design libraries such as Ant design, and framer motion. `,
      `Implemented data visualization for the dashboard of one of the products, enabling users to have broader
