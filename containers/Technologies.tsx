@@ -40,6 +40,10 @@ const techs = [
         img: '/images/technologies/react.png'
     },
     {
+        first: 'REDUX',
+        img: '/images/technologies/redux.png'
+    },
+    {
         first: 'NEXT',
         second: 'JS',
         img: '/images/technologies/nextjs.png'
