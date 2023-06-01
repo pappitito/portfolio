@@ -48,6 +48,20 @@ export const projects = [
     },
     {
         id: 3,
+        img: '/images/projects/linkedin-clone.png',
+        title: 'linkedIn clone',
+        subtitle: 'Basic UI clone of linked equipped with authentication and database using firebase ',
+        livelink: 'https://devsnacks-linkedin-clone.app',
+        details: `In this project, I aimed to recreate the familiar and user-friendly interface of LinkedIn while incorporating modern web technologies. By leveraging the power of React, I created a dynamic and interactive user interface that delivers a seamless browsing experience.
+
+        To ensure a secure and reliable authentication system, I integrated Firebase Authentication. This allows users to create accounts, log in, and securely access their personalized profiles. By leveraging Firebase Firestore, a scalable and real-time database, I implemented robust data storage and retrieval functionalities for user profiles, connections, and other essential features.
+        
+        Throughout the development process, I focused on delivering a high-performance application with smooth transitions and responsive design. Leveraging the Redux library, I effectively managed the application's state, providing efficient data flow and enhancing overall performance.
+        
+        By building this LinkedIn UI clone, I aimed to showcase my proficiency in frontend development, UI design, and integration of powerful technologies. The project demonstrates my ability to create engaging user interfaces, implement secure authentication mechanisms, and utilize cutting-edge tools and frameworks to deliver outstanding web applications.`
+    },
+    {
+        id: 4,
         img: '/images/projects/mutanos-ss.png',
         title: 'Mutanos',
         subtitle: 'landing page done for an imaginary restaurant',
@@ -60,7 +74,7 @@ export const projects = [
          the last section contains brief introduction of the lead chef at the restaurant.`
     },
     {
-        id: 4,
+        id: 5,
         img: '/images/projects/code.png',
         title: 'taskguru-api',
         subtitle:'API for taskguru',
@@ -87,7 +101,7 @@ export const projects = [
           provides a flexible and scalable solution for managing user accounts and tasks programmatically.`,
     },
     {
-        id: 5,
+        id: 6,
         img: '/images/projects/code.png',
         title: 'setQR-API',
         subtitle: 'backend powering the setQR web app',
@@ -130,7 +144,7 @@ export const projects = [
            `,
     },
     {
-        id: 6,
+        id: 7,
         img: '/images/projects/wbt-ss.png',
         title: 'web trade journal',
         subtitle: 'online trading journal for traders',
@@ -162,7 +176,7 @@ export const projects = [
          achieve better results.`,
     },
     {
-        id: 7,
+        id: 8,
         img: '/images/projects/code.png',
         title: 'trade journal API',
         subtitle: 'backend powering the trade journal web app',
@@ -193,7 +207,7 @@ export const projects = [
         interact with the platform and gain valuable insights into their trading performance.`,
     },
     {
-        id: 8,
+        id: 9,
         img: '/images/projects/code.png',
         title: 'store filter API',
         subtitle: 'filtering store products on the backend',
@@ -225,7 +239,7 @@ export const projects = [
         the API allows users to find the products they are looking for quickly and easily`,
     },
     {
-        id: 9,
+        id: 10,
         img: '/images/projects/code.png',
         title: 'Webscraper for online store',
         subtitle: `Web scraper built for an online store's flash sale.`,
@@ -255,7 +269,7 @@ export const projects = [
          searching for it manually.`,
     },
     {
-        id: 10,
+        id: 11,
         img: '/images/projects/code.png',
         title: 'breast cancer diagnosis',
         subtitle: 'Machine learning model for detecting breast cancer using tensorflow',
@@ -273,7 +287,7 @@ export const projects = [
         In conclusion, machine learning classifiers built with TensorFlow can help in the early detection and diagnosis of breast cancer by analyzing numerical data extracted from medical records. As more data becomes available, these models will become even more accurate and valuable in the fight against breast cancer`,
     },
     {
-        id: 11,
+        id: 12,
         img: '/images/projects/code.png',
         title: 'Railway Fault classifier',
         subtitle: 'Machine learning model for detecting faults on a railway using tensorflow',
@@ -291,7 +305,7 @@ export const projects = [
         In conclusion, a railway fault detector that is trained with TensorFlow using images of good and faulty railways can automate the process of detecting faults in railways, leading to improved safety and reliability. As more data becomes available, these models will become even more accurate and valuable in maintaining the integrity of railway infrastructure.`,
     },
     {
-        id: 12,
+        id: 13,
         img: '/images/projects/code.png',
         title: 'Drybean classifier',
         subtitle: 'Machine learning model for classifying drybean into 7 categories using tensorflow',

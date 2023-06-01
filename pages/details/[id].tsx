@@ -54,7 +54,7 @@ const [scrollPosition, setScrollPosition] = React.useState(0);
                         <div className=' w-[80%] mds:w-[50%] max-w-[33rem] mt-[1rem] border-white rounded-[0.2rem] border-[0.2rem]'>
                             <Image src={project.img} alt='screenshot' width={600} height={400} priority  />
                         </div>
-                        <p className='mt-[2rem] w-[90%] leading-8 text-justify mds:w-[75%] max-w-[44rem]'>{project.details}</p>
+                        <p className='mt-[2rem] w-[90%] leading-8 md:text-justify mds:w-[75%] max-w-[44rem]'>{project.details}</p>
                         <div className='flex flex-row mb-[2rem]'>
                             <div className='flex flex-wrap gap-[1rem] w-[100%] mt-[2rem] justify-center items-center '>
                                <Link className='w-[7.2rem]' href={project.livelink? project.livelink: project.codeLink? project.codeLink: ''} target='_blank'><Button text={project.livelink? 'VIEW LIVE': 'VIEW CODE'} /></Link>
