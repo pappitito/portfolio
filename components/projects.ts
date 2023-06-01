@@ -51,7 +51,7 @@ export const projects = [
         img: '/images/projects/linkedin-clone.png',
         title: 'linkedIn clone',
         subtitle: 'Basic UI clone of linked equipped with authentication and database using firebase ',
-        livelink: 'https://devsnacks-linkedin-clone.app',
+        livelink: 'https://devsnacks-linkedin-clone.netlify.app',
         details: `In this project, I aimed to recreate the familiar and user-friendly interface of LinkedIn while incorporating modern web technologies. By leveraging the power of React, I created a dynamic and interactive user interface that delivers a seamless browsing experience.
 
         To ensure a secure and reliable authentication system, I integrated Firebase Authentication. This allows users to create accounts, log in, and securely access their personalized profiles. By leveraging Firebase Firestore, a scalable and real-time database, I implemented robust data storage and retrieval functionalities for user profiles, connections, and other essential features.
