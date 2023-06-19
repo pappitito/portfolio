@@ -320,5 +320,38 @@ export const projects = [
         
         In conclusion, a dry bean classifier trained with numerical data using TensorFlow is a machine learning model that can accurately identify different types of dry beans based on numerical features such as size, shape, color, and texture. As more data becomes available, these models will continue to improve in their accuracy, making them an essential tool for identifying and classifying different types of dry beans.`,
     },
+    {
+        id: 14,
+        img: '/images/projects/tradejot.png',
+        title: 'Tradejot',
+        subtitle: 'New User interface for web trading journal with better features',
+        livelink: 'https://tradejot.netlify.app',
+        details: `New and Updated user interface for web trading journal. 
+        Web Trade Journal is a powerful online platform designed to help financial
+        market traders document their trades and track their progress over time. The platform
+         is intuitive and easy to use, allowing traders to quickly and easily log their trades 
+         and monitor their performance.
+
+       With Web Trade Journal, traders can document a range of properties for each trade, including
+        the open price, close price, stop loss, take profit, risk to reward ratio, strategy utilized,
+         and instrument traded. This comprehensive view of each trade allows traders to identify patterns
+          in their trading behavior and make informed decisions.
+       
+       The platform is designed with privacy and security in mind. Each trader has their own private journal
+        that is only accessible with authentication. This ensures that each trader's data is kept secure and confidential.
+       
+       Web Trade Journal provides traders with valuable insights into their trading performance.
+        The platform tracks the number of trades won, lost, or break even, as well as the trader's win
+         rate and best strategy. This data can be used to help traders identify areas for improvement and 
+         optimize their trading strategies.
+       
+       The platform is also highly customizable. Traders can export their data in a range of formats, allowing
+        them to create custom reports and analyze their trading performance in greater detail.
+       
+       Overall, Web Trade Journal is an essential tool for any financial market trader who wants to improve
+        their trading strategies and track their progress over time. The platform provides a secure and 
+        intuitive way to document trades and gain valuable insights into trading behavior, helping traders 
+        achieve better results.`,
+    },
     
 ]
