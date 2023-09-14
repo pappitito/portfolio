@@ -41,7 +41,7 @@ const AboutMe = ({myRef}: Props) => {
                                positive impact wherever I find myself.</p></div>
                          <div className='flex flex-row mt-4 gap-8'>
                              <div className='flex flex-col items-center'>
-                                 <div data-aos="flip-down" className='text-[3rem] font-bold'>6+</div>
+                                 <div data-aos="flip-down" className='text-[3rem] font-bold'>10+</div>
                                  <div data-aos="flip-left" className='text-[0.8rem] text-center text-[#65C23A]'>MONTHS OF EXPERIENCE</div>
                              </div>
                              <div className='flex flex-col items-center'>
