@@ -88,7 +88,7 @@ const Resume = ({myRef}: Props) => {
         </div>
         <div className='flex justify-end mr-[1.5rem] mds:mr-[2.5rem] lgm:mr-[3.2rem]'>
             <div className='mdm:w-[8rem] w-[8rem] mt-8'>
-               <Button text={'VIEW CV'} isOutline onClick={() => window.open("/files/TitoCV.pdf")} />
+               <Button text={'VIEW CV'} isOutline onClick={() => window.open("/files/TitoOnwudinjoCV.pdf")} />
             </div>
         </div>
         <div className='mds:ml-[7rem] ml-[3.6rem] mt-[2rem] mdm:mt-[3.7rem]'>

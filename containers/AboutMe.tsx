@@ -59,7 +59,7 @@ const AboutMe = ({myRef}: Props) => {
                     <div data-aos="fade-right" className='mdm:text-[2rem] text-[1.3rem] font-semibold'>Trustworthy, Creative and Dedicated to 
                         <span data-aos="fade-left" className='text-[#65C23A]'> delivering on time</span></div>
                         <div className='mdm:w-[8rem] w-[8rem] mt-8'>
-                        <Button text={'VIEW CV'} isOutline onClick={() => window.open("/files/TitoCV.pdf")}/>
+                        <Button text={'VIEW CV'} isOutline onClick={() => window.open("/files/TitoOnwudinjoCV.pdf")}/>
                         </div>
 
                 </div>
